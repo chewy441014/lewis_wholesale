@@ -23,7 +23,7 @@ function Header() {
           <div className="flex flex-shrink-0 items-center">
             <img className="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Lewis Wholesale"></img>
           </div>
-          <div class="flex space-x-8">
+          <div className="flex space-x-8">
             <a href="" className="px-3 py-2 font-medium">Lewis Wholesale</a>
             <div className="items-center py-2">
               <a href="#about" className="text-sm font-medium px-2" aria-current="page">About</a>
