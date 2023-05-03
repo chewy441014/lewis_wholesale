@@ -21,7 +21,7 @@ function Header() {
       <div className="relative flex h-16 items-center justify-between">
         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div className="flex flex-shrink-0 items-center">
-            <img className="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Lewis Wholesale"></img>
+            <img className="hidden h-8 w-auto lg:block md:block sm:block outline-dotted outline-2 outline-offset-2 rounded" src="/logo1.png" alt="Lewis Wholesale"></img>
           </div>
           <div className="flex space-x-8">
             <a href="" className="px-3 py-2 font-medium">Lewis Wholesale</a>
