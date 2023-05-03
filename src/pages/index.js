@@ -58,10 +58,7 @@ function Footer() {
 function About() {
   return <div className="max-w-screen-lg shadow-2xl rounded-lg mx-auto py-12 mt-4" id="about">
     <div className="px-10">
-      <p>Lewis Wholesale Co is the premiere Distributor of various different brands. We are a distributor located in the greater Houston TX area. More specifically, 2800 E Broadway St STE in Pearland TX 77581. We primarily sell B2B, online (only when it is okay to do so, Revlon for example since we are authorized to do so). We are currently looking to expand, so we are in the process of exploring brick and mortar locations as well. We have in house representatives that ensure that brands are distributed via their companies preference, always.</p>
       <p>Our typical customer varies since we are bottom line driven. If the profit margins make sense, we will distribute it. Our typical customers are those interested in the following: Health and household, beauty and personal care, grocery, pet supplies, home and office, baby supplies.</p>
-      <p>We are looking for long-term business relationships only. We are interested in making repeat purchases and providing value to ensure a steady, lasting business relationship. Our main goal right now is to partner with reputable suppliers, who can handle multiple and consistent volume orders.</p>
-      <p>Our model is partnered focused and we operate Globally. We are composed of skilled product specialists, who are vetted and have decades of combined experience. We understand supply chain logistics and we understand supply and demand. Simply put, we are your go-to for Product Distribution.</p>
     </div>
   </div>
 }
