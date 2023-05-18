@@ -39,6 +39,7 @@ function Header() {
 function Content() {
   return <>
     <div className="container mx-auto">
+      <Intro />
       <About />
       <Contact />
     </div>
@@ -47,18 +48,34 @@ function Content() {
 
 function Footer() {
   return <>
-    <div className="bg-black rounded-lg shadow m-4">
-      <div className="w-full mx-auto max-w-screen-xl p-4">
+      <div className="mx-auto max-w-screen-xl p-4 content-center flex flex-col">
+        <img className="rounded-lg max-w-sm shadow-2x1" src="logo-lewis-wholesale-big.png"/>
         <p className="text-center">Design by Preston Hill</p>
       </div>
-    </div>
   </>
 }
 
+function Intro() {
+  return <div className="max-w-screen-lg shadow-2xl rounded-lg mx-auto">
+    <img src="/back1.jpg" className="rounded-lg shadow-2x1" />
+  </div>
+}
+
 function About() {
-  return <div className="max-w-screen-lg shadow-2xl rounded-lg mx-auto py-12 mt-4" id="about">
-    <div className="px-10">
-      <p>Our typical customer varies since we are bottom line driven. If the profit margins make sense, we will distribute it. Our typical customers are those interested in the following: Health and household, beauty and personal care, grocery, pet supplies, home and office, baby supplies.</p>
+  return <div className="max-w-screen-lg shadow-2xl rounded-lg mx-auto " id="about">
+    <div className="px-10 py-12 mt-4">
+      {Blurb("We distribute what our customers need most.", "/logo1.png", "justify-end")}
+      {Blurb("We work across a diverse range of industries. These include health and household, beauty and personal care, grocery, pet supplies, and home and office.", "/logo1.png", "justify-start")}
+    </div>
+  </div>
+}
+
+function Blurb(text, image, justify) {
+  justify = "flex " + justify
+  return <div className={justify}>
+    <div className="flex max-w-lg items-center">
+      <p className="p-3 pr-5 m-2">{text}</p>
+      <img className="p-3 pr-5 m-2" src={image} />
     </div>
   </div>
 }
