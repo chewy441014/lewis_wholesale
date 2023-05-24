@@ -48,34 +48,37 @@ function Content() {
 
 function Footer() {
   return <>
-      <div className="mx-auto max-w-screen-xl p-4 content-center flex flex-col">
-        <img className="rounded-lg max-w-sm shadow-2x1" src="logo-lewis-wholesale-big.png"/>
-        <p className="text-center">Design by Preston Hill</p>
+      <div className="mx-auto max-w-screen-xl p-4 content-center flex flex-col mt-4">
+        <img className="rounded-lg max-w-sm shadow-2xl" src="logo-lewis-wholesale-big.png"/>
+        <p className="text-center m-2">Design by Preston Hill</p>
       </div>
   </>
 }
 
 function Intro() {
-  return <div className="max-w-screen-lg shadow-2xl rounded-lg mx-auto">
-    <img src="/back1.jpg" className="rounded-lg shadow-2x1" />
+  return <div className="max-w-screen-lg mx-auto bg-office-back bg-cover bg-center h-screen rounded-lg px-32 shadow-2xl">
+    {/* <img src="/back1.jpg" className="rounded-lg blur-sm" /> */}
+    <div className="px-16 h-full backdrop-blur-sm backdrop-saturate-[0.60] backdrop-brightness-125">
+      
+    </div>
   </div>
 }
 
 function About() {
-  return <div className="max-w-screen-lg shadow-2xl rounded-lg mx-auto " id="about">
-    <div className="px-10 py-12 mt-4">
-      {Blurb("We distribute what our customers need most.", "/logo1.png", "justify-end")}
-      {Blurb("We work across a diverse range of industries. These include health and household, beauty and personal care, grocery, pet supplies, and home and office.", "/logo1.png", "justify-start")}
+  return <div className="max-w-screen-lg mx-auto " id="about">
+    <div className="px-10 py-5 mt-4">
+      {Blurb("We distribute what our customers need most.", "/delivery-truck-icon.png", "justify-end")}
+      {Blurb("We work across a diverse range of industries. These include health and household, beauty and personal care, grocery, pet supplies, and home and office.", "/personal-care-products-icon.png", "justify-start")}
     </div>
   </div>
 }
 
 function Blurb(text, image, justify) {
-  justify = "flex " + justify
+  justify = "flex my-10 " + justify
   return <div className={justify}>
-    <div className="flex max-w-lg items-center">
+    <div className="flex max-w-lg items-center bg-gradient-to-r from-[#2b50aa]/40 from-60% to-[#2b50aa] rounded-lg shadow-2xl">
       <p className="p-3 pr-5 m-2">{text}</p>
-      <img className="p-3 pr-5 m-2" src={image} />
+      <img className="p-3 pr-5 m-2 object-scale-down h-36 w-36" src={image} />
     </div>
   </div>
 }

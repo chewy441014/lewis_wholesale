@@ -6,6 +6,11 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    extend: {
+      backgroundImage: {
+        'office-back': "url('/back1.jpg')"
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
