@@ -76,7 +76,7 @@ function About() {
 function Blurb(text, image, justify) {
   justify = "flex my-10 " + justify
   return <div className={justify}>
-    <div className="flex max-w-lg items-center bg-gradient-to-r from-[#2b50aa]/40 from-60% to-[#2b50aa] rounded-lg shadow-2xl">
+    <div className="flex max-w-lg items-center bg-[#2b50aa]/75 rounded-lg shadow-2xl">
       <p className="p-3 pr-5 m-2">{text}</p>
       <img className="p-3 pr-5 m-2 object-scale-down h-36 w-36" src={image} />
     </div>
