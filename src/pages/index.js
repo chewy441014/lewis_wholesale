@@ -58,8 +58,10 @@ function Footer() {
 function Intro() {
   return <div className="max-w-screen-lg mx-auto bg-office-back bg-cover bg-center h-screen rounded-lg px-32 shadow-2xl">
     {/* <img src="/back1.jpg" className="rounded-lg blur-sm" /> */}
-    <div className="px-16 h-full backdrop-blur-sm backdrop-saturate-[0.60] backdrop-brightness-125">
-      
+    <div className="px-16 h-full backdrop-blur-sm backdrop-saturate-[0.60] backdrop-brightness-125 content-center grid">
+      <div className="bg-[#2b50aa]/90 rounded-lg p-6 text-4xl font-bold">
+        <p>We will help distribute and market your products across multiple platforms, including amazon!</p>
+      </div>
     </div>
   </div>
 }
@@ -76,8 +78,8 @@ function About() {
 function Blurb(text, image, justify) {
   justify = "flex my-10 " + justify
   return <div className={justify}>
-    <div className="flex max-w-lg items-center bg-[#2b50aa]/75 rounded-lg shadow-2xl">
-      <p className="p-3 pr-5 m-2">{text}</p>
+    <div className="flex max-w-lg items-center bg-[#2b50aa]/90 rounded-lg shadow-2xl">
+      <p className="p-3 pr-5 m-2 font-bold">{text}</p>
       <img className="p-3 pr-5 m-2 object-scale-down h-36 w-36" src={image} />
     </div>
   </div>
@@ -85,7 +87,7 @@ function Blurb(text, image, justify) {
 
 function Contact() {
   return <div className="max-w-screen-lg shadow-2xl rounded-lg mx-auto text-center py-12 mt-4" id="contact">
-    <h2 className="text-3xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10">
+    <h2 className="text-3xl leading-9 font-bold tracking-tight sm:text-4xl sm:leading-10">
       Become a Partner
     </h2>
     <div className="mt-8 flex justify-center">
