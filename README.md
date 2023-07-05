@@ -6,6 +6,8 @@ This is a Next.js based landing page for Lewis Wholesale Co. :tm: created by han
 
 ![website demo](https://github.com/chewy441014/lewis_wholesale/assets/6627972/84186c81-9e4c-4ba0-a290-ea3887dc262e)
 
+*To be hosted on their website at a later time.*
+
 ## Technologies Used
 
 - Next.js
