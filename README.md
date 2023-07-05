@@ -3,6 +3,7 @@
 ## Description
 
 This is a Next.js based landing page created for Lewis Wholesale Co. :tm: created by hand by Preston Hill. Here is a preview of the webpage: 
+
 ![website demo](https://github.com/chewy441014/lewis_wholesale/assets/6627972/84186c81-9e4c-4ba0-a290-ea3887dc262e)
 
 ## Technologies Used
